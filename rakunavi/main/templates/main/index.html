@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>体育祭ホームページ</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-    h1 { color: crimson; }
-  </style>
-</head>
-<body>
-  <h1>🏆 体育祭へようこそ！</h1>
-  <p>日程：10月10日</p>
-  <p>場所：学校グラウンド</p>
-  <p><a href="/scores/">得点速報はこちら</a></p>
-</body>
-</html>
+{% extends "main/base.html" %}
+
+{% block title %}ホーム{% endblock %}
+
+{% load static %} 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}

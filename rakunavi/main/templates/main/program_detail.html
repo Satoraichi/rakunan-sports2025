@@ -1,0 +1,14 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}{{ program.name }}{% endblock %}
+
+{% block content %}
+<h2>{{ program.number }}. {{ program.name }}</h2>
+<p>出場学年: {{ program.grades|join:", " }}</p>
+{% if program.image %}
+<img src="{{ program.image.url }}" alt="{{ program.name }}" style="max-width: 300px;">
+{% endif %}
+<p>{{ program.description }}</p>
+<a href="{% url 'program_list' %}">一覧に戻る</a>
+{% endblock %}

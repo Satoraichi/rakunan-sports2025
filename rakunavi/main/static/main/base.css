@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+/*パラメータ設定*/
+body{
+    --background-color: linear-gradient(45deg,#acd9fd,#bfe2ff,#cee9ff);
+    --color: #000;
+    --theme-color2: #709bff;
+    --title-font: "Shippori Mincho";
+    --text-font: ;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--color);
+    width: 100svw;
+    height:100svh;
+    font-size: 15px;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-family: var(--title-font);
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem;
+}
+
+nav{
+    position: fixed;
+    height: max-content;
+    width: 90%;
+    top: 2rem;
+    left: 5%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;        /* nav内の要素を上下中央 */
+    justify-content: space-between; /* 左右に分ける */
+    background-color: #fff;
+    color:#000;
+    border-radius: .5rem;
+    box-shadow: #00000050 0 0 15px 2px;
+    font-family: var(--title-font);
+    font-weight: 600;
+    z-index: 100;
+}
+
+    .navicon {
+        width: 40%;
+        height: 100%;
+        display: flex;             /* 内部要素を中央配置 */
+        align-items: center;       /* 上下中央 */
+        justify-content: center;   /* 左右中央 */
+        font-size: 1.5rem;
+    }
+
+    .nav_right{
+        width: 60%;
+        display: flex;
+        flex-direction: column; /* 縦方向に並べる */
+        justify-content: center; /* 上下中央 */
+        align-items: flex-end;   /* 右寄せ */
+    }
+
+    .secondarynav{
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+        margin-bottom: 0.5rem;
+        text-align: right; /* テキスト右寄せ */
+    }
+
+    .primarynav{
+        width: 100%;
+        font-size: 1.2rem;
+        padding: .3rem 1rem;
+        border-top: var(--theme-color2) solid .1em;
+    }
+
+    .primarynav ul {
+        list-style: none;
+        padding: 0;
+        margin: .5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .primaryli{
+        padding: .3rem;
+        display: flex;
+        align-items: center;  /* 上下中央 */
+        justify-content: center; /* 左右中央 */
+    }

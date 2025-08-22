@@ -1,0 +1,33 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+<link rel="stylesheet" href="{% static 'main/program.css' %}">
+{% endblock %}
+
+{% block title %}プログラム一覧{% endblock %}
+
+{% block content %}
+<h2>午前の部</h2>
+<ul>
+    {% for p in morning %}
+    <li>
+        <a href="{% url 'program_detail' p.number %}">
+            {{ p.number }}. {{ p.name }} ({{ p.grades|join:", " }})
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>午後の部</h2>
+<ul>
+    {% for p in afternoon %}
+    <li>
+        <a href="{% url 'program_detail' p.number %}">
+            {{ p.number }}. {{ p.name }} ({{ p.grades|join:", " }})
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        {% load static %} 
+        <meta charset="UTF-8">
+        <title>{% block title %}体育祭ホームページ{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'main/base.css' %}">
+        {% block extra_css %}{% endblock %}
+    </head>
+    <body>
+        <nav>
+            <div class="navicon">
+
+            </div>
+            <div class="nav_right">
+                <div class="secondarynav">
+                    {% if user.is_authenticated %}
+                        {{ user.username }} でログイン中...
+                    {% else %}
+                        ログインしていません...
+                    {% endif %}
+                </div>
+                <div class="primarynav">
+                    <ul>
+                        <li class="primaryli">トップ<ul id="sub-menu"></ul></li>
+                        <li class="primaryli">プログラム紹介<ul id="sub-menu"></ul></li>
+                        <li class="primaryli">設備<ul id="sub-menu"></ul></li>
+                        <li class="primaryli">ライブ配信<ul id="sub-menu"></ul></li>
+                        <li class="primaryli">記事<ul id="sub-menu"></ul></li>
+                        <li class="primaryli">アクセス<ul id="sub-menu"></ul></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+        {% block content %}{% endblock %}
+        </main>
+    </body>
+</html>
