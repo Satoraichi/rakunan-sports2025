@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/team.css' %}">
+{% endblock %}
+
+{% block title %}応援団{% endblock %}
+
+{% block content %}
+<header></header>
+  <!-- 説明と意気込み -->
+   <div class="team-red"><div class="title"><div class="titlechar">赤</div><div class="titlechar">団</div></div><div class="team"><section></section></div></div>
+   <div class="team-blue"><div class="title"><div class="titlechar">青</div><div class="titlechar">団</div></div><div class="team"><section></section></div></div>
+   <div class="team-yellow"><div class="title"><div class="titlechar">黄</div><div class="titlechar">団</div></div><div class="team"><section></section></div></div>
+{% endblock %}

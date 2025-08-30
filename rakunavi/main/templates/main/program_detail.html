@@ -1,14 +1,31 @@
 {% extends "main/base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/base.css' %}">
+<link rel="stylesheet" href="{% static 'main/program.css' %}">
+{% endblock %}
+
 {% block title %}{{ program.name }}{% endblock %}
 
 {% block content %}
-<h2>{{ program.number }}. {{ program.name }}</h2>
-<p>出場学年: {{ program.grades|join:", " }}</p>
-{% if program.image %}
-<img src="{{ program.image.url }}" alt="{{ program.name }}" style="max-width: 300px;">
-{% endif %}
-<p>{{ program.description }}</p>
-<a href="{% url 'program_list' %}">一覧に戻る</a>
+<div class="header_mini"></div>
+<section>
+<h2>{{ program.name }}</h2>
+<h3 style="text-align: center;">出場学年: {{ program.grades|join:", " }}</h3>
+<a href="{% url 'program_list' %}"><button class="button_basic1">一覧に戻る</button></a>
+
+  <div class="program-content">
+    {% if program.image %}
+    <div class="program-image">
+      <img src="{{ program.image.url }}" alt="{{ program.name }}">
+    </div>
+    {% endif %}
+
+    <div class="program-description">
+      <p>{{ program.description }}</p>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

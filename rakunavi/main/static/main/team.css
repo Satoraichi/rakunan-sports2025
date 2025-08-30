@@ -1,0 +1,39 @@
+.team-red{
+    width: 100%;
+    display: flex;
+    background-color: #f02617dd;
+    color: #fff;
+}
+
+.title{
+    width: 15svw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: var(--title-font);
+}
+
+.titlechar{
+    font-size: 8rem;
+}
+
+.team{
+    width: 85svw;
+    height: 50svh;
+    padding: 1rem;
+}
+
+.team-blue{
+    background-color: #1784eadd;
+    display: flex;
+    width: 100svw;
+    color: #fff;
+}
+
+.team-yellow{
+    background-color: #eed111dd;
+    display: flex;
+    width: 100svw;
+    color: #000;
+}

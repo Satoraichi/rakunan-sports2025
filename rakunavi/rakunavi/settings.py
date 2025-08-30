@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p*$cu0kc6l*$8i%8q)en5vpmwvj)($$hamo@+n@6)5g#xxb3em'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rakunan-sports2025.onrender.com', 'rakunan-sports2025.pgw.com']
 
 
 # Application definition

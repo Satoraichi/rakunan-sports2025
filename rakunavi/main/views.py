@@ -20,3 +20,6 @@ def program_detail(request, number):
     return render(request, 'main/program_detail.html', {
         'program': program
     })
+
+def team(request):
+    return render(request, 'main/team.html')

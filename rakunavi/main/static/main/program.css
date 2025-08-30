@@ -1,0 +1,87 @@
+.unit{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card{
+    display: flex;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    color: var(--color);
+    text-decoration: none;
+    font-family: var(--text-font);
+    align-items: center; 
+    transition: .4s;
+}
+
+.card:hover{
+    box-shadow: #00000050 0 0 15px 2px;
+    transform: scale(1.05);
+}
+
+    .number{
+        width: 15%;
+        font-size: 1.5rem;
+    }
+
+    .name{
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .grade{
+        width: 20%;
+        font-size: 1rem;
+    }
+
+        .grade_inner{
+            padding: .2rem .5rem;
+            display: inline-block;
+            border-radius: 2rem;
+            border: var(--theme-color2) solid .15em;
+            background-color: #709bff;
+            color: #fff;
+        }
+
+    .enter{
+        width: 5%;
+        font-size: 1.5rem;
+    }
+
+.program-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start; /* 上揃え */
+    gap: 6%; /* 画像と説明の間隔 */
+    flex-wrap: wrap;
+}
+
+.program-image {
+    flex: 0 0 40%; /* 横幅40% */
+}
+
+.program-image img {
+    width: 100%; /* 枠に合わせてリサイズ */
+    height: auto;
+    border-radius: .5rem; /* 任意で角丸 */
+    aspect-ratio: 3/2;
+}
+
+.program-description {
+    flex: 0 0 54%; /* 横幅60% */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    word-wrap: break-word; /* 長い単語やURLを折り返す */
+    word-break: break-word; /* 同じく折り返しを強制 */
+    white-space: normal; /* 改行可能にする */
+}
