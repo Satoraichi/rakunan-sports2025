@@ -13,7 +13,7 @@
 <section>
 <h2>{{ program.name }}</h2>
 <h3 style="text-align: center;">出場学年: {{ program.grades|join:", " }}</h3>
-<a href="{% url 'program_list' %}"><button class="button_basic1">一覧に戻る</button></a>
+<a href="{% url 'program_list' %}"><button class="button_jump1">back</button></a>
 
   <div class="program-content">
     {% if program.image %}

@@ -12,41 +12,45 @@
     padding: 1rem 1.5rem;
     width: 100%;
     background-color: var(--card-color);
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     color: var(--color);
     text-decoration: none;
     font-family: var(--text-font);
     align-items: center; 
+    box-shadow: #a9c2db88 0 5px 20px 2px;
     transition: .4s;
 }
 
 .card:hover{
-    box-shadow: #00000050 0 0 15px 2px;
+    box-shadow: #6b7b8bbb 0 2px 15px 2px;
     transform: scale(1.05);
 }
 
     .number{
         width: 15%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .name{
         width: 60%;
         font-size: 1.5rem;
+        font-weight: 1000;
     }
 
     .grade{
         width: 20%;
         font-size: 1rem;
+        font-weight: 800;
+        display:flex;
     }
 
         .grade_inner{
-            padding: .2rem .5rem;
-            display: inline-block;
+            padding: .3em .8rem;
             border-radius: 2rem;
-            border: var(--theme-color2) solid .15em;
-            background-color: #709bff;
+            background-color: #ff9447;
+            box-shadow: inset #72543d15 0 0 5px 2px;
             color: #fff;
+            margin-right: .5rem;
         }
 
     .enter{
